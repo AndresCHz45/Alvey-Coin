@@ -122,7 +122,7 @@ void LegacyVM::caseCreate()
     updateMem(memNeed(initOff, initSize));
     updateIOGas();
 
-#ifdef LVY_BUILD
+#ifdef ALVEY_BUILD
     if (endowment) BOOST_THROW_EXCEPTION(CreateWithValue());
 #endif
 

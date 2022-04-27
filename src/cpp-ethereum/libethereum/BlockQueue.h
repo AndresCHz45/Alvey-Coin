@@ -312,7 +312,7 @@ private:
     Logger m_loggerDetail{createLogger(VerbosityTrace, "bq")};
 };
 
-#ifndef LVY_BUILD
+#ifndef ALVEY_BUILD
 boost::log::formatting_ostream& operator<<(
     boost::log::formatting_ostream& _out, BlockQueueStatus const& _s);
 }

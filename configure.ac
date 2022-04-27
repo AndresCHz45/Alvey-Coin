@@ -5,7 +5,7 @@ define(_CLIENT_VERSION_REVISION, 4)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_RC, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
-define(_COPYRIGHT_YEAR, 2022)
+define(_COPYRIGHT_YEAR, 2021)
 define(_COPYRIGHT_HOLDERS,[The %s Developers])
 define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[AlveyCoin Core]])
 AC_INIT([AlveyCoin Core],m4_join([.], _CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MINOR, _CLIENT_VERSION_REVISION, m4_if(_CLIENT_VERSION_BUILD, [0], [], _CLIENT_VERSION_BUILD))m4_if(_CLIENT_VERSION_RC, [0], [], [rc]_CLIENT_VERSION_RC),[https://github.com/alveyproject/alvey/issues],[alvey],[https://alvey.org/])
@@ -324,7 +324,7 @@ if test x$use_sanitizers != x; then
     ]],[[]])])
 fi
 
-CPPFLAGS="$CPPFLAGS -DLVY_BUILD"
+CPPFLAGS="$CPPFLAGS -DALVEY_BUILD"
 
 ERROR_CXXFLAGS=
 if test "x$enable_werror" = "xyes"; then

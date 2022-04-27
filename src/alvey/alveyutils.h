@@ -1,5 +1,5 @@
-#ifndef LVYUTILS_H
-#define LVYUTILS_H
+#ifndef ALVEYUTILS_H
+#define ALVEYUTILS_H
 
 #include <libdevcore/Common.h>
 #include <libdevcore/FixedHash.h>
